@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java/Java.iml" filepath="$PROJECT_DIR$/Java/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab-w3-4-mr-font.iml" filepath="$PROJECT_DIR$/lab-w3-4-mr-font.iml" />
+    </modules>
+  </component>
+</project>
