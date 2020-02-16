@@ -1,3 +1,5 @@
+//I'm so lost about what I'm supposed to do
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -34,7 +36,7 @@ class GameOfLifeTest {
 
     @Test
 
-    public void evolution() {
+    public void evolution2() {
 
         // Declare and initialize board
 
@@ -62,19 +64,19 @@ class GameOfLifeTest {
 
 
 
-        GameOfLife.setBoard = new GameOfLife(A); // Use the constructor that takes in an array
+        GameOfLife x = new GameOfLife(A); // Use the constructor that takes in an array
 
 
 
         // Call evolution method for the instance to compute n evolutions. In this test, we only compute 1.
 
-        GameOfLife.evolution(1);
+        x.evolution(1);
 
 
 
         // assert that your expected (array B) is equal to the actual (board of instance)
 
-        assertArrayEquals(B, GameOfLife.getBoard());
+        assertArrayEquals(B, x.getBoard());
 
     }
 

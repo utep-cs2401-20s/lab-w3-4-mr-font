@@ -14,19 +14,19 @@ public class GameOfLife {
 
     }
 
-    public void setSize(int size){
+    public void GameOfLife(int S){
 
-        this.size = size;
+        this.size = S;
     }
 
-    public void setBoard(int[][] Board){
+    public void GameOfLife(int[][] B){
 
 
         //save the size to size
         //initialize your board, and previous
         //this.size = size;
-        this.Board = Board;
-        this.Previous = Board;
+        this.Board = B;
+        this.Previous = B;
     }
 
     public int[][] getBoard(){
