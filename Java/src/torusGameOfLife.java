@@ -16,6 +16,7 @@ public class torusGameOfLife extends GameOfLife {
         this.Previous = Board;
     }
 
+
 @Override
     public int neighbors(int r, int c){
 

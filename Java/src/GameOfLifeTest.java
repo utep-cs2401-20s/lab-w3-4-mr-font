@@ -34,50 +34,24 @@ class GameOfLifeTest {
     void setBoard() {
     }
 
+
+
+    //attempt to reimplement evolution2
     @Test
+    public void evolution3() {
 
-    public void evolution2() {
-
-        // Declare and initialize board
-
-        int[][] A = {{0, 0, 0},
-
-                {0, 1, 0},
-
-                {0, 0, 0}};
-
-
-
-        // Declare and initialize expected state of board AFTER n evolutions. In this case, we will run one evolution, so B is the board that we should have after 1 evolution
-
-
-
-        int[][] B = {{0, 0, 0},
-
-                {0, 0, 0},
-
-                {0, 0, 0}};
-
-
-
-        // Declare and initialize instance of GOL (Remember that you guys will only test TORUS GOL, not the regular one)
-
-
-
-        GameOfLife x = new GameOfLife(A); // Use the constructor that takes in an array
-
-
-
-        // Call evolution method for the instance to compute n evolutions. In this test, we only compute 1.
+        int[][] A = {{0,0,0},
+                     {0,1,0},
+                     {0,0,0}};
+        GameOfLife x = new GameOfLife(A);
+        int[][] B = {{0,0,0},
+                     {0,0,0},
+                     {0,0,0}};
 
         x.evolution(1);
 
-
-
-        // assert that your expected (array B) is equal to the actual (board of instance)
-
+        //assertEquals(B, x.GameOfLife(A));
         assertArrayEquals(B, x.getBoard());
-
     }
 
     @Test
